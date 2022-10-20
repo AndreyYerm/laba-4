@@ -1,0 +1,88 @@
+
+.nav{
+    position: sticky;
+}
+.nav-link:hover{
+    color: #ffc107 !important;
+    transition: .3s;
+}
+.carousel-item {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+      object-fit: cover;
+}
+.carousel-item h5{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 4px 10px;
+    background-color: rgba(0, 0, 0, 0.299);
+}
+.carousel-item p{
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.299);
+    border-radius: 10px;
+}
+.carousel-item:hover p{
+    animation-name: slide-up;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-up{
+    0%{
+        opacity: 0;
+        position: absolute;
+    }
+    10%{
+        position: relative;
+        opacity: 0;
+    }
+    100%{
+        position: relative;
+        opacity: 1;
+    }
+}
+.row{
+    height: 600px;
+    overflow: auto;
+}
+.gallery-link:hover{
+    filter: brightness(50%);
+    transition: .2s;
+    
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.sidebar{
+    background-color: black;
+}
+.menu-btn-efc:hover{
+    color:#ffc107 !important;
+}
+.btn-close:focus{
+    box-shadow: none;
+}
+.dem-h{
+    height: 200px;
+}
+@media (max-width: 576px){
+    .carousel-item {
+        height: 250px;
+    }
+    .offcanvas-title{
+        color: white;
+        font-size: 15px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .carousel-item {
+        height: 300px;
+    }
+}

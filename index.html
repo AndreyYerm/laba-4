@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".offcanvas-body">
+
+  <div class="offcanvas offcanvas-start w-25 bg-dark text-white" tabindex="-1" id="offcanvas"
+  data-bs-scroll="true" data-bs-keyboard="false" data-bs-backdrop="false">
+    <div class="offcanvas-header">
+        <h6 class="offcanvas-title d-none d-sm-block fs-2" id="offcanvas">Paragraphs</h6>
+        <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body px-0">
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+            <li>
+                <a href="#link1" class="nav-link text-truncate text-white">
+                    <i class="fs-5"></i><span class="ms-1 d-none d-sm-inline">Paragraph 1</span>
+                </a>
+            </li>
+            <li>
+                <a href="#link2" class="nav-link text-truncate text-white">
+                    <i class="fs-5"></i><span class="ms-1 d-none d-sm-inline">Paragraph 2</span> </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-truncate text-white">
+                    <i class="fs-5"></i><span class="ms-1 d-none d-sm-inline">Paragraph 3</span></a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-truncate text-white">
+                    <i class="fs-5"></i><span class="ms-1 d-none d-sm-inline">Paragraph 4</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-truncate text-white">
+                    <i class="fs-5"></i><span class="ms-1 d-none d-sm-inline">Paragraph 5</span></a>
+            </li>
+            <li>
+                <a href="#" class="nav-link text-truncate text-white">
+                    <i class="fs-5"></i><span class="ms-1 d-none d-sm-inline">Paragraph 6</span> </a>
+            </li>
+        </ul>
+    </div>
+  </div>
+
+    <div class="container dem-h d-flex align-items-center justify-content-center"><h1>Menu affix demonstration</h1></div>
+
+    <header class="p-3 text-bg-dark sticky-top">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+              <button class="btn text-white menu-btn-efc" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button">
+                <i class="bi bi-list fs-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"></i>
+              </button>
+
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="#" class="nav-link px-2 text-white">Home</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+        
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                  <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+                </form>
+        
+                <div class="text-end">
+                  <button type="button" class="btn btn-outline-light me-2">Login</button>
+                  <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container col-6 p-3" id="link1">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="bird.jpg" class="d-block w-100" alt="bird">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam ea quia temporibus laboriosam amet odit, doloribus explicabo non suscipit. Suscipit quia quo at neque quisquam eligendi tempore perferendis commodi exercitationem.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="bird2.webp" class="d-block w-100" alt="bird2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="bird3.jpg" class="d-block w-100" alt="bird3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div class="container mt-5 container-second" id="link2">
+      <div class="row mb-5">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <a href="#" class="gallery-link">
+            <img
+              src="../bird-g/bird-g-1.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Boat on Calm Water"
+            />  
+          </a>
+          
+          <a href="#" class="gallery-link">
+            <img
+              src="../bird-g/bird-g-2.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Wintry Mountain Landscape"
+            />
+          </a>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <a href="#" class="gallery-link">
+            <img
+              src="../bird-g/bird-g-3.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Mountains in the Clouds"
+            />
+          </a>
+          
+          <a href="#" class="gallery-link">
+            <img
+              src="../bird-g/bird-g-4.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Boat on Calm Water"
+            />
+          </a>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <a href="#" class="gallery-link">
+            <img
+              src="../bird-g/bird-g-5.webp"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Waves at Sea"
+            />
+          </a>
+          
+          <a href="#" class="gallery-link">
+            <img
+              src="../bird-g/bird-g-6.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Yosemite National Park"
+            />
+          </a>
+          
+          <a href="#" class="gallery-link">
+            <img
+              src="../bird-g/bird-g-7.webp"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Yosemite National Park"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
